@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: white;
+    background-color:RGB(245, 245, 245);
     color: black;
     line-height: 1.6;
 }
@@ -158,13 +158,51 @@ nav {
 
 .hero-desc {
     position: relative;
-    height: 500px;
+    height: 400px;
     width: 750px;
-    background-color: black;
     border-radius: 8px;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5%;
 }
-        
+
+.image-slide{
+    position: absolute;
+    height:100%;
+    width:600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-slide:nth-child(1){
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+}
+
+.image-slide:nth-child(2){
+    background-color: transparent;
+}
+.image-slide:nth-child(2) img{
+    height:100%;
+    width:100%;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+}
+
+.image-slide:nth-child(3){
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+}
+ 
+.image-slide img{
+    height:90%;
+    width:100%;
+    margin-top: 2%;
+}
 .features {
     padding: 5rem 1rem;
 }
@@ -252,35 +290,25 @@ nav {
 .testimonials {
     padding: 5rem 1rem;
     background-color: black;
-}
-
-.testimonial-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.testimonial-card {
-    flex: 1 1 300px;
-    max-width: 350px;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-    position: relative;
+.test-container{
+    height:550px;
+    width:675px;
+    background-color: #f5f5f5;
 }
 
-.testimonial-text {
-    font-style: italic;
-    margin-bottom: 1rem;
+.test-avatar{
+    height:550px;
+    width:400px;
+    background-color: antiquewhite;
 }
-
-.testimonial-author {
-    font-weight: bold;
-    color: var(--primary);
+.test-avatar img{
+    height: 100%;
+    width:100%;
 }
 
 .cta-section {
